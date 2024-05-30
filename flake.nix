@@ -21,15 +21,8 @@
         modules = [
           ./desktop/base.nix
         ];
-      };nixosConfigurations = {
-      nixos = lib.nixosSystem {
-        inherit system;
-        modules = [
-          ./laptop/base.nix
-        ];
       };
     };
-  };
   nixosConfigurations = {
       nixos = lib.nixosSystem {
         inherit system;
