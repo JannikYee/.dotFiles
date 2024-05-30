@@ -21,10 +21,15 @@
         modules = [
           ./desktop/base.nix
         ];
+      };nixosConfigurations = {
+      nixos = lib.nixosSystem {
+        inherit system;
+        modules = [
+          ./laptop/base.nix
+        ];
       };
     };
   };
-
   nixosConfigurations = {
       nixos = lib.nixosSystem {
         inherit system;
@@ -33,6 +38,9 @@
         ];
       };
     };
+  };
+
+  
 
   #outputs = { self, nixpkgs, ... }@inputs: {
   #  # Please replace my-nixos with your hostname
