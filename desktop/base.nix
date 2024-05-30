@@ -29,22 +29,4 @@
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
-  hardware.opengl = {
-    enable = true;
-    driSupport = true;
-    driSupport32Bit = true;
-  };
-
-  #i3 Test wegen NVIDIA
-#  windowManager.i3 = {
-#     enable = true;
-#      package = pkgs.i3-gaps;
-#      extraPackages = with pkgs; [
-#        dmenu
-#        i3lock
-#      ];
-#    };
-#
-
-
 }
