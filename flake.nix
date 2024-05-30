@@ -25,6 +25,15 @@
     };
   };
 
+  nixosConfigurations = {
+      nixos = lib.nixosSystem {
+        inherit system;
+        modules = [
+          ./laptop/base.nix
+        ];
+      };
+    };
+
   #outputs = { self, nixpkgs, ... }@inputs: {
   #  # Please replace my-nixos with your hostname
   #  nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
