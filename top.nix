@@ -115,6 +115,7 @@
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   environment.systemPackages = with pkgs; [
     discord
+    drawio
     git
     google-chrome
     gparted
@@ -123,6 +124,7 @@
     libreoffice-qt
     neofetch
     steam
+    structorizer
     sl
     rstudio
     #tutanota-desktop
