@@ -23,7 +23,7 @@
         ];
       };
     };
-  nixosConfigurations = {
+    nixosConfigurations = {
       nixos = lib.nixosSystem {
         inherit system;
         modules = [
