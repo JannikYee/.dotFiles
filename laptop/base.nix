@@ -15,4 +15,5 @@
   boot.initrd.luks.devices."luks-dbdad372-cf1d-4dfa-91b9-07fb45befdae".device = "/dev/disk/by-uuid/dbdad372-cf1d-4dfa-91b9-07fb45befdae";
 
   networking.hostName = "nixos"; # Define your hostname.
+
 }
