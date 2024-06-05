@@ -29,4 +29,13 @@
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
+  users.users.jasmine = {
+    isNormalUser = true;
+    description = "Jasmine";
+    extraGroups = [ "networkmanager"];
+    packages = with pkgs; [
+    #  thunderbird
+    ];
+  };
+  
 }
