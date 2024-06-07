@@ -117,6 +117,7 @@
     discord
     drawio
     git
+    gnomeExtensions.tiling-assistant
     google-chrome
     gparted
     hunspell
