@@ -118,6 +118,7 @@
     drawio
     git
     gnomeExtensions.tiling-assistant
+    gnome.gnome-tweaks
     google-chrome
     gparted
     hunspell
