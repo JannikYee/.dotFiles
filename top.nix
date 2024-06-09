@@ -125,6 +125,7 @@
     hunspellDicts.de_DE
     libreoffice-qt
     neofetch
+    nh
     obsidian
     steam
     structorizer
