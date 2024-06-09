@@ -4,11 +4,14 @@
   inputs = {
     # NixOS official package source, using the nixos-23.11 branch here
     #nixpkgs.url = "github:NixOS/nixpkgs/nixos-23.11";
+    home-manager.url = "github:nix-community/home-manager/master";
+    home-manager.inputs.nixpkgs.follows = "nixpkgs";
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
 
   outputs = {
     self,
+    home-manager,
     nixpkgs
   }: let 
     lib = nixpkgs.lib;
@@ -29,6 +32,18 @@
         modules = [
           ./laptop/base.nix
         ];
+      };
+    };
+    homeConfigurations = {
+      "jannik@nixos-desktop" = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+        modules = [./desktop/home.nix];
+      };
+    };
+    homeConfigurations = {
+      "jannik@nixos" = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+        modules = [./laptop/home.nix];
       };
     };
   };
