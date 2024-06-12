@@ -20,7 +20,6 @@
   home.packages = [
     # # Adds the 'hello' command to your environment. It prints a friendly
     # # "Hello, world!" when run.
-    # pkgs.hello
 
     # # It is sometimes useful to fine-tune packages, for example, by applying
     # # overrides. You can do that directly here, just don't forget the
@@ -64,7 +63,18 @@
   #
   home.sessionVariables = {
     # EDITOR = "emacs";
+    FLAKE = "/home/jannik/.dotFiles/";
   };
+
+  programs.zsh = {
+    enable = true;
+    shellAliases = {
+      ll = "ls -la";
+      update = "nh os switch -u -a";
+    };
+    initExtra = "neofetch";
+  };
+
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
