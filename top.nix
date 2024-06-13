@@ -119,7 +119,8 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  
+  nixpkgs.config.allowBroken = true; #Kaputte Packete (Minecraft)
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   environment.systemPackages = with pkgs; [
     discord
