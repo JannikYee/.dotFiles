@@ -132,6 +132,7 @@
     hunspell
     hunspellDicts.de_DE
     libreoffice-qt
+    minecraft
     neofetch
     nh
     obsidian
