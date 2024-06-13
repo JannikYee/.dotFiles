@@ -55,6 +55,14 @@
     xkb.layout = "de";
     xkb.variant = "";
 
+  #cinnamon Test
+    #libinput.enable = true;
+    #desktopManager.cinnamon.enable = true;
+    #libinput.enable = true;  
+	  #displayManager.lightdm.enable = true;  
+	  #desktopManager = {  
+		#  cinnamon.enable = true;  
+	  #};  
   #i3 Test wegen NVIDIA
 #  windowManager.i3 = {
 #     enable = true;
