@@ -61,7 +61,7 @@
       
       # Enable Cinnamon
       cinnamon.enable = true;
-    }
+    };
   #i3 Test wegen NVIDIA
 #  windowManager.i3 = {
 #     enable = true;
