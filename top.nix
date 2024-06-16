@@ -57,7 +57,7 @@
 
     desktopManager = {
       # Enable Gnome
-      gnome.enable = true;
+      #gnome.enable = true;
       
       # Enable Cinnamon
       cinnamon.enable = true;
