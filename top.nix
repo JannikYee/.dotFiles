@@ -60,11 +60,11 @@
       gnome = {
       enable = true;
       
-      extraGSettingsOverridePackages = [ pkgs.gnome.mutter ];
-      extraGSettingsOverrides = ''
-      [org.gnome.mutter]
-      experimental-features=['scale-monitor-framebuffer']
-      '';
+      #extraGSettingsOverridePackages = [ pkgs.gnome.mutter ];
+      #extraGSettingsOverrides = ''
+      #[org.gnome.mutter]
+      #experimental-features=['scale-monitor-framebuffer']
+      #'';
       };
       # Enable Cinnamon
       # cinnamon.enable = true;
