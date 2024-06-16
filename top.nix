@@ -49,20 +49,22 @@
   # Enable the GNOME Desktop Environment.
   services.xserver.displayManager.gdm.enable = true;
   services.xserver.desktopManager.gnome.enable = true;
-
+  # Enable Cinnamon
+  services.xserver.desktopManager.cinnamon.enable = true;
+  services.displayManager.defaultSession = "cinnamon";
   # Configure keymap in X11
   services.xserver = {
     xkb.layout = "de";
     xkb.variant = "";
 
-  #cinnamon Test
+    #cinnamon Test
     #libinput.enable = true;
     #desktopManager.cinnamon.enable = true;
-    #libinput.enable = true;  
 	  #displayManager.lightdm.enable = true;  
 	  #desktopManager = {  
 		#  cinnamon.enable = true;  
 	  #};  
+  
   #i3 Test wegen NVIDIA
 #  windowManager.i3 = {
 #     enable = true;
@@ -119,7 +121,7 @@
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
-  nixpkgs.config.allowBroken = true; #Kaputte Packete (Minecraft)
+  # nixpkgs.config.allowBroken = true; #Kaputte Packete (Minecraft)
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   environment.systemPackages = with pkgs; [
