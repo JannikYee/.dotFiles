@@ -47,24 +47,21 @@
   };
 
   # Enable the GNOME Desktop Environment.
-  services.xserver.displayManager.gdm.enable = true;
-  services.xserver.desktopManager.gnome.enable = true;
-  # Enable Cinnamon
-  services.xserver.desktopManager.cinnamon.enable = true;
-  services.displayManager.defaultSession = "cinnamon";
+  #services.displayManager.defaultSession = "cinnamon";
   # Configure keymap in X11
   services.xserver = {
     xkb.layout = "de";
     xkb.variant = "";
+    
+    displayManager.gdm.enable = true;
 
-    #cinnamon Test
-    #libinput.enable = true;
-    #desktopManager.cinnamon.enable = true;
-	  #displayManager.lightdm.enable = true;  
-	  #desktopManager = {  
-		#  cinnamon.enable = true;  
-	  #};  
-  
+    desktopManager = {
+      # Enable Gnome
+      gnome.enable = true;
+      
+      # Enable Cinnamon
+      cinnamon.enable = true;
+    }
   #i3 Test wegen NVIDIA
 #  windowManager.i3 = {
 #     enable = true;
