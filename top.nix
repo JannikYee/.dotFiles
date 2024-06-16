@@ -57,10 +57,10 @@
 
     desktopManager = {
       # Enable Gnome
-      #gnome.enable = true;
+      gnome.enable = true;
       
       # Enable Cinnamon
-      cinnamon.enable = true;
+      # cinnamon.enable = true;
     };
   #i3 Test wegen NVIDIA
 #  windowManager.i3 = {
