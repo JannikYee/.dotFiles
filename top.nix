@@ -139,7 +139,6 @@
     hunspell
     hunspellDicts.de_DE
     libreoffice-qt
-    lutris
     #minecraft
     neofetch
     nh
