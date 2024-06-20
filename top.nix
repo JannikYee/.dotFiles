@@ -145,7 +145,6 @@
     nh
     obsidian
     pavucontrol #grafisches Kontrollwerkzeug für PulseAudio.
-    qjackctl
     qpwgraph
     steam
     structorizer
