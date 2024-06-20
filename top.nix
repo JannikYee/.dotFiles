@@ -143,6 +143,7 @@
     neofetch
     nh
     obsidian
+    pavucontrol #grafisches Kontrollwerkzeug für PulseAudio.
     steam
     structorizer
     sl
