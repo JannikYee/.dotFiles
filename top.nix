@@ -129,6 +129,7 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   environment.systemPackages = with pkgs; [
+    barrier
     discord
     drawio
     git
@@ -145,6 +146,7 @@
     obsidian
     pavucontrol #grafisches Kontrollwerkzeug für PulseAudio.
     qjackctl
+    qpwgraph
     steam
     structorizer
     sl
