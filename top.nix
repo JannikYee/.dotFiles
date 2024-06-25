@@ -57,6 +57,9 @@
 
     desktopManager = {
       # Enable Gnome
+      xterm.enable = false;
+      xfce.enable = true;
+
       gnome = {
       enable = true;
       
@@ -69,6 +72,8 @@
       # Enable Cinnamon
       # cinnamon.enable = true;
     };
+    
+    displayManager.defaultSession = "xfce";
   #i3 Test wegen NVIDIA
 #  windowManager.i3 = {
 #     enable = true;
