@@ -139,6 +139,7 @@
     discord
     drawio
     git
+    gptfdisk
     gnomeExtensions.tiling-assistant
     gnome.gnome-tweaks
     google-chrome
@@ -147,9 +148,11 @@
     hunspellDicts.de_DE
     libreoffice-qt
     #minecraft
+    mdadm
     neofetch
     nh
     obsidian
+    parted
     pavucontrol #grafisches Kontrollwerkzeug für PulseAudio.
     qpwgraph
     steam
