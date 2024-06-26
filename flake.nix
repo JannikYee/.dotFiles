@@ -42,6 +42,14 @@
         ];
       };
     };
+    nixosConfigurations = {
+      desktop-nas = lib.nixosSystem {
+        inherit system;
+        modules = [
+          ./desktop-nas/base.nix
+        ];
+      };
+    };
     homeConfigurations = {
       "jannik@nixos-desktop" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
@@ -58,6 +66,12 @@
       "jannik@nixos-desktop-hp" = home-manager.lib.homeManagerConfiguration {
         inherit pkgs;
         modules = [./desktop-hp/home.nix];
+      };
+    };
+    homeConfigurations = {
+      "jannik@desktop-nas" = home-manager.lib.homeManagerConfiguration {
+        inherit pkgs;
+        modules = [./desktop-nas/home.nix];
       };
     };
   };
