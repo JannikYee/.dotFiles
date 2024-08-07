@@ -137,6 +137,7 @@
     barrier
     chromium
     discord
+    dislocker
     drawio
     git
     gptfdisk
@@ -152,6 +153,7 @@
     neofetch
     nh
     obsidian
+    openfortivpn
     parted
     pavucontrol #grafisches Kontrollwerkzeug für PulseAudio.
     qpwgraph
@@ -161,6 +163,7 @@
     tutanota-desktop
     vscode
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
+    vmware-horizon-client
     wget
   ];
 
