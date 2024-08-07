@@ -136,6 +136,7 @@
   environment.systemPackages = with pkgs; [
     barrier
     chromium
+    ciscoPacketTracer8
     discord
     dislocker
     drawio
