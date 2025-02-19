@@ -40,7 +40,7 @@
   # Enable the X11 windowing system.
   services.xserver.enable = true;
 
-  hardware.opengl = {
+  hardware.graphics = {
     enable = true;
     #driSupport = true;
     #driSupport32Bit = true;
@@ -94,7 +94,7 @@
 
   # Enable sound with pipewire.
   #sound.enable = true;
-  hardware.pulseaudio.enable = false;
+  services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {
     enable = true;
@@ -116,7 +116,7 @@
   users.users.jannik = {
     isNormalUser = true;
     description = "Jannik";
-    extraGroups = [ "networkmanager" "wheel" ];
+    extraGroups = [ "networkmanager" "wheel"];
     packages = with pkgs; [
     #  thunderbird
     ];
@@ -125,6 +125,11 @@
   # Install firefox.
   programs.firefox.enable = true;
 
+  # Install Steam.
+  programs.steam = {
+    enable = true;
+  };
+
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
@@ -132,18 +137,24 @@
   # $ nix search wget
   nixpkgs.config.allowBroken = true; #Kaputte Packete (Minecraft)
 
+  virtualisation.virtualbox.host.enable = true;
+  virtualisation.virtualbox.guest.enable = true;
+  users.extraGroups.vboxusers.members = [ "jannik" ];
+
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   environment.systemPackages = with pkgs; [
     barrier
     chromium
+    #ciscoPacketTracer7
     ciscoPacketTracer8
     discord
     dislocker
-    drawio
+    #drawio
+    fritzing
     git
     gptfdisk
     gnomeExtensions.tiling-assistant
-    gnome.gnome-tweaks
+    gnome-tweaks
     google-chrome
     gparted
     hunspell
@@ -154,17 +165,19 @@
     neofetch
     nh
     obsidian
-    openfortivpn
+    #openfortivpn
     parted
     pavucontrol #grafisches Kontrollwerkzeug für PulseAudio.
+    python3
     qpwgraph
-    steam
+    #steam
     structorizer
     sl
     tutanota-desktop
+    #virtualbox
     vscode
     vim # Do not forget to add an editor to edit configuration.nix! The Nano editor is also installed by default.
-    vmware-horizon-client
+    #vmware-horizon-client
     wget
   ];
 
