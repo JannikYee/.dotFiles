@@ -143,7 +143,7 @@
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   environment.systemPackages = with pkgs; [
-    barrier
+    #barrier
     chromium
     #ciscoPacketTracer7
     ciscoPacketTracer8
